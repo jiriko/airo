@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use App\Trip\Actions\CreateTripQuotationAction;
 use App\Trip\TransferObjects\CreateTripQuotationData;
 

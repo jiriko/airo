@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Auth\Http\Controllers;
 
 use App\Auth\TransferObjects\LoginData;

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Trip\TransferObjects;
 
 use Spatie\LaravelData\Attributes\Computed;

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use App\Trip\Http\Controllers\TripQuotationController;
 use Illuminate\Support\Facades\Route;
 
