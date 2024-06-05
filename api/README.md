@@ -42,6 +42,20 @@ This guide will help you set up Laravel Sail for local development.
     ./vendor/bin/sail up -d
     ```
 
+3. **Migrate db**
+
+   Copy .env.example to .env and update db credentials
+
+    ```bash
+    ./vendor/bin/sail artisan migrate
+    ```
+
+   If you want to run Sail in the background, you can add the `-d` option:
+
+    ```bash
+    ./vendor/bin/sail up -d
+    ```
+
 4. **Access the application**
 
    Once Sail is up and running, you can access your Laravel application in your web browser at: [http://localhost](http://localhost)

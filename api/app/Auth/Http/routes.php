@@ -9,4 +9,6 @@ Route::group([
     'prefix' => 'auth',
 ], function () {
     Route::post('login', [AuthController::class, 'login'])->name('auth.login');
+
+    Route::get('me', [AuthController::class, 'show'])->name('auth.show');
 });
