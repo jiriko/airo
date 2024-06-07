@@ -12,7 +12,8 @@ class TripQuotationController
 {
     public function store(CreateTripQuotationData $request, CreateTripQuotationAction $action): TripQuotationData
     {
-        return $action->execute($request)->getData()
+        return $action->execute($request)
+            ->getData()
             ->except('total_cents')
             ->wrap('data');
     }
