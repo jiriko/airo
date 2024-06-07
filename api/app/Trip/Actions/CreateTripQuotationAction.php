@@ -40,7 +40,7 @@ class CreateTripQuotationAction
     /**
      * @throws \Exception
      */
-    private function calculateTrip(int $age, int $days): float
+    private function calculateTrip(int $age, int $days): int
     {
         $load = $this->ageLoad($age);
 
@@ -50,7 +50,7 @@ class CreateTripQuotationAction
     /**
      * @throws \Exception
      */
-    private function ageLoad(int $age): float
+    private function ageLoad(int $age): int
     {
         if ($age < 31) {
             return self::LOAD_UNDER_31;
